@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
         <img src="img/sports-game.png" alt="">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -18,40 +18,173 @@
 
     </header>
     <section class="play_main">
-     <div class="play_header_info">
-        <div class="Formation">
-            <label class="label">Formation:</label>
     
-          <select class="select">
-            <option>3-4-1-2</option>
-            <option>3-4-2-1</option>
-            <option>3-4-3</option>
-            <option>3-5-2</option>
-          </select>
-          </div>
-          <div  class="Formation">
-            <label class="label" >Title:</label>
-            <input id="input" type="text" placeholder="Title for your Squad">
-          </div>
+     <div class="studium_socor">
+
      </div>
      <div class="studium">
-        <div class="container">
-            <div class="line"></div>
-            <div class="half"></div>
-            <div class="panelty left"></div>
-            <div class="panelty right"></div>
-            <div class="p-spot left">&nbsp;</div>
-            <div class="p-spot right">&nbsp;</div>
-            <div class="center"></div>
-            <div class="p-place left"></div>   
-            <div class="p-place right"></div> 
-            
-        </div>
-     
-    </section>
-   
-        
+      <!-- <img id="img" src="img/badge_gold.webp"  class="gk" alt=""> -->
+        <!-- <button class="gk" onclick="GK_function()">GK</button> -->
+         <div class="gk">add</div>
+        <!-- <img id="img" src="img/badge_gold.webp"   class="lb" alt=""> -->
 
+        <button class="lb">LB</button>
+        
+        <!-- <img id="img" src="img/badge_gold.webp"   class="cb1" alt=""> -->
+
+        <button class="rb">RB</button>
+        <!-- <img id="img" src="img/badge_gold.webp"   class="rb" alt=""> -->
+        <!-- <img id="img" src="img/badge_gold.webp"  class="cb2" alt=""> -->
+
+
+        <button class="cb1">CB</button>
+        <button class="cb2">CB</button>
+        <button class="cm1">CM</button>
+        <!-- <img id="img" src="img/badge_gold.webp" class="cm1" alt=""> -->
+
+
+        <button class="cm2">CM</button>
+        <!-- <img id="img" src="img/badge_gold.webp" class="cm2" alt=""> -->
+
+        <button class="cm3">CM</button>
+        <!-- <img id="img" src="img/badge_gold.webp" class="cm3" alt=""> -->
+
+        <button class="lw">LW</button>
+        <!-- <img id="img" src="img/badge_gold.webp" class="lw" alt=""> -->
+
+        <button class="rw">RW</button>
+
+        <button class="st">ST</button>
+        <!-- <img id="img" src="img/badge_gold.webp"class="st" alt=""> -->
+         
+
+      </div>
+      <div class="studium2"> 
+        <button class="gk">GK</button>
+        <button class="lb">LB</button>
+        <button class="rb">RB</button>
+        <button class="cb1">CB</button>
+        <button class="cb2">CB</button>
+        <button class="cmd1">CM</button>
+        <button class="cmd2">CM</button>
+        <!-- <button class="cm3">CM</button>
+        <button class="lw">LW</button> 
+        <button class="rw">RW</button> 
+        <button class="st">ST</button> -->
+      </div>
+      <div class="test">
+        <div class="play_header_info">
+          <div class="Formation">
+              <label class="label">Formation:</label>
+      
+            <select class="select">
+             
+              <option value="option3">--choose</option>
+              <option value="option4">4-4-2</option>
+              <option value="option5">4-3-3</option>
+            </select>
+            </div>
+            <div  class="Formation">
+              <label class="label" >Name:</label>
+              <input id="input" type="text" placeholder="Name of your Squad">
+            </div>
+       </div>
+       <!-- <div class="test3">
+        <div class="testgk">
+          <button onclick="GK_function" class="gk">GK</button>
+          <input id="GK_input" onkeyup="GK_function()"  type="text" placeholder="Search for a player">
+  
+         </div>
+        <div class="test2">
+          <button class="lb">LB</button>
+          <input type="text" placeholder="Search for a player">
+  
+         </div>
+        <div class="test2">
+          <button class="rb">RB</button>
+          <input type="text" placeholder="Search for a player">
+  
+         </div>
+        <div class="test2">
+          <button class="cm1">CM</button>
+          <input type="text" placeholder="Search for a player">
+  
+         </div>
+        <div class="test2">
+          <button class="cm2">CM</button>
+          <input type="text" placeholder="Search for a player">
+  
+         </div>
+        <div class="test2">
+          <button class="cm3">CM</button>
+          <input type="text" placeholder="Search for a player">
+  
+         </div>
+        <div class="test2">
+          <button class="lw">LW</button>
+          <input type="text" placeholder="Search for a player">
+  
+         </div>
+        <div class="test2">
+          <button class="rw">RW</button>
+          <input type="text" placeholder="Search for a player">
+  
+         </div>
+        <div class="test2">
+          <button class="st">ST</button>
+          <input type="text" placeholder="Search for a player">
+  
+         </div>
+       </div>
+      </div> -->
+      <div class="addPlayerCrad">
+        <img class="addPlayerbtn" src="img/add.png" alt="">
+        <h3>Add Player</h3>
+    
+                                  
     </div>
+      <div class="palyers_body">
+        <div class="gkPlayers">
+            <div class="container" id="player-cards-container">
+                
+            </div>
+    
+        </div>
+    </div>
+
+    </section> 
+
+   
+   
   </body>
+  <script src="script.js"></script>
+  <script>
+    const select=document.querySelector(".select");
+    const studium=document.querySelector(".studium");
+    const studium2=document.querySelector(".studium2");
+    const studiumSocor=document.querySelector(".studium_socor");
+   
+    select.addEventListener("change",()=>{
+      const selectedValue=select.value;
+      if(selectedValue==="option5"){
+        studium.style.display="grid"
+        studium2.style.display="none"
+        studiumSocor.style.display="none"
+
+      }
+      else if(selectedValue==="option4"){
+        studium2.style.display="grid"
+        studium.style.display="none"
+        studiumSocor.style.display="none"
+      }
+      else if(selectedValue==="option3"){
+        studium2.style.display="none"
+        studium.style.display="none"
+        studiumSocor.style.display="flex"
+      }
+    })
+  
+    
+  </script>
+
 </html>
