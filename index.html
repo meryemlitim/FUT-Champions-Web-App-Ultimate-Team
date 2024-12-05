@@ -1,50 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <img src="img/sports-game.png" alt="">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="players.html">Players</a></li>
-            <li><a href="play.html">Squad</a></li>
-            <li><a href=" #">Guideline</a></li>
-        </ul>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="img/sports-game - Copie.png" alt="" />
+      <ul> 
+        <li><a href="index.html">Home</a></li>
+        <li><a href="players.html">Players</a></li>
+        <!-- <li><a href="play.html">Squad</a></li>
+        <li><a href=" #">Guideline</a></li> -->
+      </ul>
     </header>
-    <section class="main_page">
-         
-        <!-- <img src="img/istockphoto-1156102065-612x612.jpg" alt=""> -->
-         <div class="divCenter">
-            <h1>PLAY NOW</h1>
-         <div class="imgContainer">
-            <a href="players.html"><img  class="img1"  src="img/soccer-player.png" alt=""></a>
-            <a href="play.html"><img class="img" src="img/game.png" alt=""></a>
-            <a href="#"><img class="img" src="img/education.png" alt=""></a>
-            
+    <div class="bigContainer">
+      <div class="pitch">
+        
+      </div>
+      <div class="pitch1">
+        <div class="gk" onclick="gkfunction()">Click to Add <br> the <br> Goalkeeper</div>
+        <div class="cb1">CB</div>
+        <div class="cb2">CB</div>
+        <div class="lb">LB</div>
+        <div class="rb">RB</div>
+        
+        <div class="cm1">CM</div> 
+        <div class="cm2">CM</div>
+        <div class="cm3">CM</div> 
+        <div class="lw">LW</div>
+        <div class="rw">RW</div>
+        <div class="st">ST</div>
+      </div>
+      <div class="pitch2">
+        <div class="gk" id="gk">GK</div>
+        <div class="cb1" id="cb1">CB</div>
+        <div class="cb2" id="cb2">CB</div>
+        <div class="lb" id="lb">LB</div>
+        <div class="rb" id="rb">RB</div>
+
+        <div class="lm">LM</div>
+        <div class="cm_1" id="cm1">cm</div>
+        <div class="cm_2" id="cm2">cm</div>
+        <div class="rm">RM</div>
+        <div class="st1" id="st1">ST</div>
+        <div class="st2" id="st2">ST</div>
+      </div>
 
 
+      <div class="pitchLeftSide">
+        <div class="play_header_info">
+          <div class="Formation">
+            <label class="label">Formation:</label> 
+            <select class="select"> 
+              <option value="option3">--choose</option>
+              <option value="option4">4-4-2</option>
+              <option value="option5">4-3-3</option>
+            </select>
+          </div>
+          <div class="addPlayerCrad">
+            <img class="addPlayerbtn" onclick="displayaddplayerContainer()" src="img/add.png" alt="">
+            <h3>Add Player</h3>                           
+          </div>
+          
+          <!-- <div class="Formation">
+                    <label class="label" >Name:</label>
+                    <input id="input" type="text" placeholder="Name of your Squad">
+                  </div> -->
+        </div>
+        <div class="playerContainer"></div>
+        <div class="CBplayerCountainer"></div>
+
+      </div>
+    </div>
+
+    <div class="AddPlayer">
+      <div class="positionSelect">
+        <label for="">Player's Position: </label>
+        <select name="" id="select1">
+            <option value="option1">--choose</option>
+            <option value="option2">Goalkeeper(GK)</option>
+            <option value="option3">Left Back(LB)</option>
+            <option value="option4">Right Back(RB)</option>
+            <option value="option5">Central Midfielder(CMD)</option>
+            <option value="option6">Center Back(CB)</option>
+            <option value="option7">Left Wing(LW)</option>
+            <option value="option8">Right Wing(RW)</option>
+            <option value="option9"> Striker(ST)</option>
+        </select>
+    </div>
+
+    <div class="addGoalkeeper">
+        <label for="gk-name">Name</label>
+        <input id="gk-name" type="text" placeholder="name">
+        <label for="gk-photo">Photo</label>
+        <input id="gk-photo" type="text" placeholder="insert link photo">
+        <label for="gk-nationality">Nationality</label>
+        <input id="gk-nationality" type="text" placeholder="nationality">
+        <label for="gk-flag">Flag</label>
+        <input id="gk-flag" type="text" placeholder="insert link flag">
+        <label for="gk-club">Club</label>
+        <input id="gk-club" type="text" placeholder="club">
+        <label for="gk-logo">Logo</label>
+        <input id="gk-logo" type="text" placeholder="insert link of club logo">
+        <label for="gk-rating">Rating</label>
+        <input id="gk-rating" type="text" placeholder="rating">
+        <label for="gk-diving">Diving</label>
+        <input id="gk-diving" type="text" placeholder="diving">
+        <label for="gk-handling">Handling</label>
+        <input id="gk-handling" type="text" placeholder="handling">
+        <label for="gk-kicking">Kicking</label>
+        <input id="gk-kicking" type="text" placeholder="kicking">
+        <label for="gk-reflexes">Reflexes</label>
+        <input id="gk-reflexes" type="text" placeholder="reflexes">
+        <label for="gk-speed">Speed</label>
+        <input id="gk-speed" type="text" placeholder="speed">
+        <label for="gk-positioning">Positioning</label>
+        <input id="gk-positioning" type="text" placeholder="positioning">
+        <button id="add-gk-btn">Add Goalkeeper</button>
 
 
-         </div>
-         </div>
+    </div>
 
-    </section>
-    <footer>
-        <ul>
-            <li><a href="#">Players</a></li>
-            <li><a href="#">Squad</a></li>
-            <li><a href=" #">Guideline</a></li>
-            <li><a href=" #">Contact Us</a></li>
+    <div class="addStriker">
+    <label for="">Name</label> 
+    <input id="player_name" type="text" placeholder="name">
+    <label for="">position</label>
+    <input id="player_position" type="text" placeholder="position">
+    <label  for="">photo</label> 
+    <input id="player_photo" type="text" placeholder="insert link photo">
+    <label for="">nationality</label> 
+    <input id="player_nationality" type="text" placeholder="nationality">
+    <label for="">flag</label> 
+    <input id="player_flag" type="text" placeholder="insert link flag">
+    <label for="">club</label>
+    <input id="player_club" type="text" placeholder="club">
+    
+    <label for="">logo</label> 
+    <input id="player_club_logo" type="text" placeholder="insert link  of club logo">
+    <label for="">rating</label> 
+    <input id="palyer_rating" type="text" placeholder="rating">
+    <label for="pace"></label> 
+    <input id="player_pace" type="text" placeholder="pace">
+    <label for="">shooting</label>
+    <input id="player_shooting" type="text" placeholder="shooting">
+    <label for="">passing</label> 
+    <input id="player_passing" type="text" placeholder="passing">
+    <label for="">dribbling</label> 
+    <input id="player_dribbling" type="text" placeholder="dribbling">
+    <label for="">defending</label> 
+    <input id="player_defending" type="text" placeholder="defending">
+    <label for="">physical</label> 
+    <input id="player_physical" type="text" placeholder="physical">
+    <button id="add_btn">submit</button>
 
-        </ul>
-    </footer>
+    </div>
+
+    </div>
 
     <script src="script.js"></script>
-</body>
+   
+  </body>
+
+  <script>
+    const select = document.querySelector(".select");  
+    const pitch1 = document.querySelector(".pitch1");
+    const pitch2 = document.querySelector(".pitch2");
+    const pitch = document.querySelector(".pitch");
+
+    select.addEventListener("change", () => {
+      const selectedValue = select.value;
+      if (selectedValue === "option5") {
+        pitch1.style.display = "grid";
+        pitch2.style.display = "none";
+        pitch.style.display = "none";
+        document.querySelector(".playerContainer").innerHTML=""
+      } else if (selectedValue === "option4") {
+        document.querySelector(".playerContainer").innerHTML=""
+
+        pitch2.style.display = "grid";
+        pitch1.style.display = "none";
+        pitch.style.display = "none";
+        document.querySelector(".playerContainer").innerHTML=""
+
+      } else if (selectedValue === "option3") {
+        pitch2.style.display = "none";
+        pitch1.style.display = "none";
+        pitch.style.display = "flex";
+        document.querySelector(".playerContainer").innerHTML=""
+
+      }
+    });
+  </script>
+
+
+<script>
+  function displayaddplayerContainer(){
+    const addPlayerbtn=document.querySelector(".AddPlayer")
+    addPlayerbtn.style.display="flex"
+    // addPlayerbtn.scrollTo({
+    //   top:addPlayerbtn.scrollHeight,
+    //   behavior:"smooth"
+      
+
+
+    // })
+
+     }   
+  
+  const select1=document.getElementById("select1");
+  const addGoalkeeper=document.querySelector(".addGoalkeeper")
+  const addStriker=document.querySelector(".addStriker")
+
+  select1.addEventListener("change",()=>{  
+    
+    const selectedValue=select1.value;
+    console.log(selectedValue)
+    if(selectedValue==="option1"){
+     addGoalkeeper.style.display="none"
+      addStriker.style.display="none"
+    }
+    
+    else if(selectedValue==="option9" || selectedValue==="option3" || selectedValue==="option4" || selectedValue==="option5" || selectedValue==="option6" || selectedValue==="option7" || selectedValue==="option8"){
+     addGoalkeeper.style.display="none"
+      addStriker.style.display="flex"
+    }
+    else if(selectedValue==="option2"){
+      addGoalkeeper.style.display="flex"
+      addStriker.style.display="none"
+
+
+    }
+    
+  })
+
+
+  document.getElementById("add-gk-btn").addEventListener("click", function () {
+  const goalkeeper = {
+      name: document.getElementById("gk-name").value,
+      photo: document.getElementById("gk-photo").value,
+      position: "GK",
+      nationality: document.getElementById("gk-nationality").value,
+      flag: document.getElementById("gk-flag").value,
+      club: document.getElementById("gk-club").value,
+      logo: document.getElementById("gk-logo").value,
+      rating: parseInt(document.getElementById("gk-rating").value),
+      diving: parseInt(document.getElementById("gk-diving").value),
+      handling: parseInt(document.getElementById("gk-handling").value),
+      kicking: parseInt(document.getElementById("gk-kicking").value),
+      reflexes: parseInt(document.getElementById("gk-reflexes").value),
+      speed: parseInt(document.getElementById("gk-speed").value),
+      positioning: parseInt(document.getElementById("gk-positioning").value),
+  };
+
+  data.players.push(goalkeeper);
+  document.querySelectorAll(".addGoalkeeper input").forEach(input => input.value = "");
+  
+  console.log(data.players)
+
+
+  
+
+});
+
+// **************************add*****************************
+
+
+document.getElementById("add_btn").addEventListener("click", function () {
+  const playerAdder= {
+      name: document.getElementById("player_name").value,
+      photo: document.getElementById("player_photo").value,
+      position: document.getElementById("player_position").value,
+      nationality: document.getElementById("player_nationality").value,
+      flag: document.getElementById("player_flag").value,
+      club: document.getElementById("player_club").value,
+      logo: document.getElementById("player_club_logo").value,
+      rating: parseInt(document.getElementById("palyer_rating").value),
+      pace: parseInt(document.getElementById("player_pace").value),
+      shooting: parseInt(document.getElementById("player_shooting").value),
+      passing: parseInt(document.getElementById("player_passing").value),
+      dribbling: parseInt(document.getElementById("player_dribbling").value),
+      defending: parseInt(document.getElementById("player_defending").value),
+      physical: parseInt(document.getElementById("player_physical").value),
+  };
+
+  data.players.push(playerAdder);
+  document.querySelectorAll(".addStriker input").forEach(input => input.value = "");
+  
+  console.log(data.players)
+
+
+  
+
+});
+
+
+
+
+
+
+</script>
+</html>
+
 </html>
