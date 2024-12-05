@@ -21,7 +21,7 @@
         
       </div>
       <div class="pitch1">
-        <div class="gk" onclick="gkfunction()">Click to Add <br> the <br> Goalkeeper</div>
+        <div class="gk" onclick="gkfunction()">GK</div>
         <div class="cb1">CB</div>
         <div class="cb2">CB</div>
         <div class="lb">LB</div>
@@ -82,13 +82,8 @@
         <select name="" id="select1">
             <option value="option1">--choose</option>
             <option value="option2">Goalkeeper(GK)</option>
-            <option value="option3">Left Back(LB)</option>
-            <option value="option4">Right Back(RB)</option>
-            <option value="option5">Central Midfielder(CMD)</option>
-            <option value="option6">Center Back(CB)</option>
-            <option value="option7">Left Wing(LW)</option>
-            <option value="option8">Right Wing(RW)</option>
-            <option value="option9"> Striker(ST)</option>
+            <option value="option3">Player</option>
+            
         </select>
     </div>
 
@@ -100,61 +95,61 @@
         <label for="gk-nationality">Nationality</label>
         <input id="gk-nationality" type="text" placeholder="nationality">
         <label for="gk-flag">Flag</label>
-        <input id="gk-flag" type="text" placeholder="insert link flag">
+        <input id="gk-flag" type="text" placeholder="....">
         <label for="gk-club">Club</label>
-        <input id="gk-club" type="text" placeholder="club">
+        <input id="gk-club" type="text" placeholder="....">
         <label for="gk-logo">Logo</label>
-        <input id="gk-logo" type="text" placeholder="insert link of club logo">
+        <input id="gk-logo" type="text" placeholder="....">
         <label for="gk-rating">Rating</label>
-        <input id="gk-rating" type="text" placeholder="rating">
+        <input id="gk-rating" type="text" placeholder="....">
         <label for="gk-diving">Diving</label>
-        <input id="gk-diving" type="text" placeholder="diving">
+        <input id="gk-diving" type="text" placeholder="....">
         <label for="gk-handling">Handling</label>
-        <input id="gk-handling" type="text" placeholder="handling">
+        <input id="gk-handling" type="text" placeholder="....">
         <label for="gk-kicking">Kicking</label>
-        <input id="gk-kicking" type="text" placeholder="kicking">
+        <input id="gk-kicking" type="text" placeholder="....">
         <label for="gk-reflexes">Reflexes</label>
-        <input id="gk-reflexes" type="text" placeholder="reflexes">
+        <input id="gk-reflexes" type="text" placeholder="....">
         <label for="gk-speed">Speed</label>
-        <input id="gk-speed" type="text" placeholder="speed">
+        <input id="gk-speed" type="text" placeholder="....">
         <label for="gk-positioning">Positioning</label>
-        <input id="gk-positioning" type="text" placeholder="positioning">
-        <button id="add-gk-btn">Add Goalkeeper</button>
+        <input id="gk-positioning" type="text" placeholder="....">
+        <button id="add-gk-btn">Submit</button>
 
 
     </div>
 
     <div class="addStriker">
     <label for="">Name</label> 
-    <input id="player_name" type="text" placeholder="name">
-    <label for="">position</label>
-    <input id="player_position" type="text" placeholder="position">
-    <label  for="">photo</label> 
-    <input id="player_photo" type="text" placeholder="insert link photo">
-    <label for="">nationality</label> 
-    <input id="player_nationality" type="text" placeholder="nationality">
-    <label for="">flag</label> 
-    <input id="player_flag" type="text" placeholder="insert link flag">
-    <label for="">club</label>
-    <input id="player_club" type="text" placeholder="club">
+    <input id="player_name" type="text" placeholder="....">
+    <label for="">Position</label>
+    <input id="player_position" type="text" placeholder="....">
+    <label  for="">Photo</label> 
+    <input id="player_photo" type="text" placeholder="....">
+    <label for="">Nationality</label> 
+    <input id="player_nationality" type="text" placeholder="....">
+    <label for="">Flag</label> 
+    <input id="player_flag" type="text" placeholder="....">
+    <label for="">Club</label>
+    <input id="player_club" type="text" placeholder="....">
     
-    <label for="">logo</label> 
-    <input id="player_club_logo" type="text" placeholder="insert link  of club logo">
-    <label for="">rating</label> 
-    <input id="palyer_rating" type="text" placeholder="rating">
+    <label for="">Logo</label> 
+    <input id="player_club_logo" type="text" placeholder="....">
+    <label for="">Rating</label> 
+    <input id="palyer_rating" type="text" placeholder="....">
     <label for="pace"></label> 
-    <input id="player_pace" type="text" placeholder="pace">
-    <label for="">shooting</label>
-    <input id="player_shooting" type="text" placeholder="shooting">
-    <label for="">passing</label> 
-    <input id="player_passing" type="text" placeholder="passing">
-    <label for="">dribbling</label> 
-    <input id="player_dribbling" type="text" placeholder="dribbling">
-    <label for="">defending</label> 
-    <input id="player_defending" type="text" placeholder="defending">
-    <label for="">physical</label> 
-    <input id="player_physical" type="text" placeholder="physical">
-    <button id="add_btn">submit</button>
+    <input id="player_pace" type="text" placeholder="....">
+    <label for="">Shooting</label>
+    <input id="player_shooting" type="text" placeholder="....">
+    <label for="">Passing</label> 
+    <input id="player_passing" type="text" placeholder="....">
+    <label for="">Dribbling</label> 
+    <input id="player_dribbling" type="text" placeholder="....">
+    <label for="">Defending</label> 
+    <input id="player_defending" type="text" placeholder="....">
+    <label for="">Physical</label> 
+    <input id="player_physical" type="text" placeholder="....">
+    <button id="add_btn">Submit</button>
 
     </div>
 
@@ -223,7 +218,7 @@
       addStriker.style.display="none"
     }
     
-    else if(selectedValue==="option9" || selectedValue==="option3" || selectedValue==="option4" || selectedValue==="option5" || selectedValue==="option6" || selectedValue==="option7" || selectedValue==="option8"){
+    else if(selectedValue==="option3"){
      addGoalkeeper.style.display="none"
       addStriker.style.display="flex"
     }
@@ -238,22 +233,44 @@
 
 
   document.getElementById("add-gk-btn").addEventListener("click", function () {
-  const goalkeeper = {
-      name: document.getElementById("gk-name").value,
-      photo: document.getElementById("gk-photo").value,
+  const goalkeeper = { 
+      name: document.getElementById("gk-name").value.trim(),
+      photo: document.getElementById("gk-photo").value.trim(),
       position: "GK",
-      nationality: document.getElementById("gk-nationality").value,
-      flag: document.getElementById("gk-flag").value,
-      club: document.getElementById("gk-club").value,
+      nationality: document.getElementById("gk-nationality").value.trim(),
+      flag: document.getElementById("gk-flag").value.trim(),
+      club: document.getElementById("gk-club").value.trim(),
       logo: document.getElementById("gk-logo").value,
-      rating: parseInt(document.getElementById("gk-rating").value),
-      diving: parseInt(document.getElementById("gk-diving").value),
-      handling: parseInt(document.getElementById("gk-handling").value),
-      kicking: parseInt(document.getElementById("gk-kicking").value),
-      reflexes: parseInt(document.getElementById("gk-reflexes").value),
-      speed: parseInt(document.getElementById("gk-speed").value),
-      positioning: parseInt(document.getElementById("gk-positioning").value),
+      rating: parseInt(document.getElementById("gk-rating").value.trim()),
+      diving: parseInt(document.getElementById("gk-diving").value.trim()),
+      handling: parseInt(document.getElementById("gk-handling").value.trim()),
+      kicking: parseInt(document.getElementById("gk-kicking").value.trim()),
+      reflexes: parseInt(document.getElementById("gk-reflexes").value.trim()),
+      speed: parseInt(document.getElementById("gk-speed").value.trim()),
+      positioning: parseInt(document.getElementById("gk-positioning").value.trim()),
   };
+
+  const errorsgk=[];
+  ["name", "photo", "position", "nationality", "flag", "club", "logo"].forEach(field => {
+    if (!goalkeeper[field]) {
+      errorsgk.push(`${field} is required.`);
+    } else if (goalkeeper[field].length < 10) {
+      errorsgk.push(`${field} must be at least 10 characters long.`);
+    }
+  });
+
+  ["rating", "diving", "handling", "kicking", "reflexes", "speed", "physical"].forEach(field => {
+    if (isNaN(goalkeeper[field]) || goalkeeper[field] < 0 || goalkeeper[field] > 100) {
+      errorsgk.push(`${field} must be a number between 0 and 100.`);
+    }
+  });
+
+  if (errorsgk.length > 0) {
+    alert("Please fix the following errors:\n" + errorsgk.join("\n"));
+    return;
+  }
+
+
 
   data.players.push(goalkeeper);
   document.querySelectorAll(".addGoalkeeper input").forEach(input => input.value = "");
@@ -268,37 +285,80 @@
 // **************************add*****************************
 
 
+// document.getElementById("add_btn").addEventListener("click", function () {
+//   const playerAdder= {
+//       name: document.getElementById("player_name").value,
+//       photo: document.getElementById("player_photo").value,
+//       position: document.getElementById("player_position").value,
+//       nationality: document.getElementById("player_nationality").value,
+//       flag: document.getElementById("player_flag").value,
+//       club: document.getElementById("player_club").value,
+//       logo: document.getElementById("player_club_logo").value,
+//       rating: parseInt(document.getElementById("palyer_rating").value),
+//       pace: parseInt(document.getElementById("player_pace").value),
+//       shooting: parseInt(document.getElementById("player_shooting").value),
+//       passing: parseInt(document.getElementById("player_passing").value),
+//       dribbling: parseInt(document.getElementById("player_dribbling").value),
+//       defending: parseInt(document.getElementById("player_defending").value),
+//       physical: parseInt(document.getElementById("player_physical").value),
+//   };
+
+//   data.players.push(playerAdder);
+//   document.querySelectorAll(".addStriker input").forEach(input => input.value = "");
+  
+//   console.log(data.players)
+
+
+  
+
+// });
+
+
 document.getElementById("add_btn").addEventListener("click", function () {
-  const playerAdder= {
-      name: document.getElementById("player_name").value,
-      photo: document.getElementById("player_photo").value,
-      position: document.getElementById("player_position").value,
-      nationality: document.getElementById("player_nationality").value,
-      flag: document.getElementById("player_flag").value,
-      club: document.getElementById("player_club").value,
-      logo: document.getElementById("player_club_logo").value,
-      rating: parseInt(document.getElementById("palyer_rating").value),
-      pace: parseInt(document.getElementById("player_pace").value),
-      shooting: parseInt(document.getElementById("player_shooting").value),
-      passing: parseInt(document.getElementById("player_passing").value),
-      dribbling: parseInt(document.getElementById("player_dribbling").value),
-      defending: parseInt(document.getElementById("player_defending").value),
-      physical: parseInt(document.getElementById("player_physical").value),
+  const playerAdder = {
+    name: document.getElementById("player_name").value.trim(),
+    photo: document.getElementById("player_photo").value.trim(),
+    position: document.getElementById("player_position").value.trim(),
+    nationality: document.getElementById("player_nationality").value.trim(),
+    flag: document.getElementById("player_flag").value.trim(),
+    club: document.getElementById("player_club").value.trim(),
+    logo: document.getElementById("player_club_logo").value.trim(),
+    rating: parseInt(document.getElementById("palyer_rating").value.trim()),
+    pace: parseInt(document.getElementById("player_pace").value.trim()),
+    shooting: parseInt(document.getElementById("player_shooting").value.trim()),
+    passing: parseInt(document.getElementById("player_passing").value.trim()),
+    dribbling: parseInt(document.getElementById("player_dribbling").value.trim()),
+    defending: parseInt(document.getElementById("player_defending").value.trim()),
+    physical: parseInt(document.getElementById("player_physical").value.trim()),
   };
 
+  const errors = [];
+
+  ["name", "photo", "position", "nationality", "flag", "club", "logo"].forEach(field => {
+    if (!playerAdder[field]) {
+      errors.push(`${field} is required.`);
+    } else if (playerAdder[field].length < 10) {
+      errors.push(`${field} must be at least 10 characters long.`);
+    }
+  });
+
+  ["rating", "pace", "shooting", "passing", "dribbling", "defending", "physical"].forEach(field => {
+    if (isNaN(playerAdder[field]) || playerAdder[field] < 0 || playerAdder[field] > 100) {
+      errors.push(`${field} must be a number between 0 and 100.`);
+    }
+  });
+
+  if (errors.length > 0) {
+    alert("Please fix the following errors:\n" + errors.join("\n"));
+    return;
+  }
+
   data.players.push(playerAdder);
+
   document.querySelectorAll(".addStriker input").forEach(input => input.value = "");
-  
-  console.log(data.players)
 
-
-  
-
+  console.log(data.players);
 });
-
-
-
-
 
 
 </script>

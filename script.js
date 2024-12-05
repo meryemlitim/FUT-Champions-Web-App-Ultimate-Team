@@ -49,7 +49,7 @@ data={
       "physical": 77
     },
     {
-      "name": "Kevin De Bruyne",
+      "name": "Kevin De",
       "photo": "https://cdn.sofifa.net/players/192/985/25_120.png",
       "position": "CM",
       "nationality": "Belgium",
